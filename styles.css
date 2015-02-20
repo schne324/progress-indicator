@@ -1,0 +1,38 @@
+:focus {
+    outline: 2px solid #000;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+}
+
+.questions {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.progress-cage {
+    width: 100%;
+    border: 1px solid #666;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.progress {
+    height: 25px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 19px;
+}
+
+.progress.half {
+  width: 50%;
+  background-color: #9acc61;
+}
+
+.progress.full {
+  width: 100%;
+  background-color: #9acc61;
+}

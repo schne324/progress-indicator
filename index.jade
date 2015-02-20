@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    link(href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel", rel="stylesheet", type="text/css")
+    link(href="styles.css", rel="stylesheet", media="all", type="text/css")
+    title Progress Indicator
+  body
+    h1 Progress Indicator
+    div.questions
+      h2 Polite Example
+      fieldset#polite
+        legend Please answer at least two of the following security questions
+        div.progress-cage
+          div.progress(
+            aria-live="polite",
+            aria-atomic="false",
+            aria-readonly="true",
+            role="progressbar",
+            aria-valuemin="0",
+            aria-valuemax="100",
+            aria-valuenow="0")
+            |0% Complete
+        div.question
+          label(for="song") What is your favorite song?
+          input(type="text", id="song")
+        div.question
+          label(for="mother") What is your mothers maiden name?
+          input(type="text", id="mother")
+        div.question
+          label(for="food") What is your favorite food?
+          input(type="text", id="food")
+        div.question
+          label(for="street") What street did you grow up on?
+          input(type="text", id="street")
+        div.question
+          label(for="pet") What was the name of your first pet?
+          input(type="text", id="pet")
+        button(type="button", class="submit", id="polite-submit") Submit
+      h2 Assertive Example
+      fieldset#assertive
+        legend Please answer at least two of the following security questions
+        div.progress-cage
+          div.progress(
+            aria-live="assertive",
+            aria-atomic="false",
+            aria-readonly="true",
+            role="progressbar",
+            aria-valuemin="0",
+            aria-valuemax="100",
+            aria-valuenow="0")
+            |0% Complete
+        div.question
+          label(for="song") What is your favorite song?
+          input(type="text", id="song")
+        div.question
+          label(for="mother") What is your mothers maiden name?
+          input(type="text", id="mother")
+        div.question
+          label(for="food") What is your favorite food?
+          input(type="text", id="food")
+        div.question
+          label(for="street") What street did you grow up on?
+          input(type="text", id="street")
+        div.question
+          label(for="pet") What was the name of your first pet?
+          input(type="text", id="pet")
+        button(type="button", class="submit", id="assertive-submit") Submit
+    script(src="index.js")
