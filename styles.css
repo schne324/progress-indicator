@@ -36,3 +36,12 @@ body {
   width: 100%;
   background-color: #9acc61;
 }
+
+.offscreen {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

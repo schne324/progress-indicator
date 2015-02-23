@@ -30,6 +30,11 @@ $.fn.progressIndicator = function () {
           .addClass('full')
           .html('100% Complete')
           .attr('aria-valuenow', '100');
+
+        $('#alert-bin')
+          .append('<p role="alert">'
+                +   'Thanks! You have provided enough info'
+                + '</p>');
       }
     })
     .on('keydown', function (keyVent) {
