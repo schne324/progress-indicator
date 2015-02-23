@@ -1,1 +1,73 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css"><link href="styles.css" rel="stylesheet" media="all" type="text/css"><title>Progress Indicator</title></head><body><h1>Progress Indicator</h1><div class="questions"><h2>Polite Example</h2><fieldset id="polite"><legend>Please answer at least two of the following security questions</legend><div class="progress-cage"><div aria-live="polite" aria-atomic="false" aria-readonly="true" role="progressbar" aria-relevant="text" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="progress">0% Complete</div></div><div class="question"><label for="song">What is your favorite song?</label><input type="text" id="song"></div><div class="question"><label for="mother">What is your mothers maiden name?</label><input type="text" id="mother"></div><div class="question"><label for="food">What is your favorite food?</label><input type="text" id="food"></div><div class="question"><label for="street">What street did you grow up on?</label><input type="text" id="street"></div><div class="question"><label for="pet">What was the name of your first pet?</label><input type="text" id="pet"></div><button type="button" id="polite-submit" class="submit">Submit</button></fieldset><h2>Assertive Example</h2><fieldset id="assertive"><legend>Please answer at least two of the following security questions</legend><div class="progress-cage"><div aria-live="assertive" aria-atomic="false" aria-readonly="true" role="progressbar" aria-relevant="text" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="progress">0% Complete</div></div><div class="question"><label for="song">What is your favorite song?</label><input type="text" id="song"></div><div class="question"><label for="mother">What is your mothers maiden name?</label><input type="text" id="mother"></div><div class="question"><label for="food">What is your favorite food?</label><input type="text" id="food"></div><div class="question"><label for="street">What street did you grow up on?</label><input type="text" id="street"></div><div class="question"><label for="pet">What was the name of your first pet?</label><input type="text" id="pet"></div><button type="button" id="assertive-submit" class="submit">Submit</button></fieldset></div><script src="js/jquery.progressIndicator.js"></script><script src="js/index.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" media="all" type="text/css">
+    <title>Progress Indicator</title>
+  </head>
+  <body>
+    <h1>Progress Indicator</h1>
+    <div class="questions">
+      <h2>Polite Example</h2>
+      <fieldset id="polite">
+        <legend>Please answer at least two of the following security questions</legend>
+        <div class="progress-cage">
+          <div aria-live="polite" aria-atomic="false" aria-relevant="text" aria-readonly="true" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="progress">0% Complete</div>
+        </div>
+        <div class="question">
+          <label for="song">What is your favorite song?</label>
+          <input type="text" id="song">
+        </div>
+        <div class="question">
+          <label for="mother">What is your mothers maiden name?</label>
+          <input type="text" id="mother">
+        </div>
+        <div class="question">
+          <label for="food">What is your favorite food?</label>
+          <input type="text" id="food">
+        </div>
+        <div class="question">
+          <label for="street">What street did you grow up on?</label>
+          <input type="text" id="street">
+        </div>
+        <div class="question">
+          <label for="pet">What was the name of your first pet?</label>
+          <input type="text" id="pet">
+        </div>
+        <button type="button" id="polite-submit" class="submit">Submit</button>
+      </fieldset>
+      <h2>Assertive Example</h2>
+      <fieldset id="assertive">
+        <legend>Please answer at least two of the following security questions</legend>
+        <div class="progress-cage">
+          <div aria-live="assertive" aria-atomic="false" aria-relevant="text" aria-readonly="true" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="progress">0% Complete</div>
+        </div>
+        <div class="question">
+          <label for="song">What is your favorite song?</label>
+          <input type="text" id="song">
+        </div>
+        <div class="question">
+          <label for="mother">What is your mothers maiden name?</label>
+          <input type="text" id="mother">
+        </div>
+        <div class="question">
+          <label for="food">What is your favorite food?</label>
+          <input type="text" id="food">
+        </div>
+        <div class="question">
+          <label for="street">What street did you grow up on?</label>
+          <input type="text" id="street">
+        </div>
+        <div class="question">
+          <label for="pet">What was the name of your first pet?</label>
+          <input type="text" id="pet">
+        </div>
+        <button type="button" id="assertive-submit" class="submit">Submit</button>
+      </fieldset>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+>>>>>>> master

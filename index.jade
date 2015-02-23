@@ -17,8 +17,8 @@ html(lang="en")
             aria-live="polite",
             aria-atomic="false",
             aria-readonly="true",
+            aria-relevant="text",
             role="progressbar",
-            aria-relevant="text"
             aria-valuemin="0",
             aria-valuemax="100",
             aria-valuenow="0")
@@ -47,8 +47,8 @@ html(lang="en")
             aria-live="assertive",
             aria-atomic="false",
             aria-readonly="true",
+            aria-relevant="true",
             role="progressbar",
-            aria-relevant="text"
             aria-valuemin="0",
             aria-valuemax="100",
             aria-valuenow="0")
@@ -69,5 +69,4 @@ html(lang="en")
           label(for="pet") What was the name of your first pet?
           input(type="text", id="pet")
         button(type="button", class="submit", id="assertive-submit") Submit
-    script(src="js/jquery.progressIndicator.js")
-    script(src="js/index.js")
+    script(src="index.js")
